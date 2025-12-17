@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catálogo Artesanato 3D</title>
+
+  <!-- CSS JÁ EXISTENTES DO SITE -->
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/navbar.css">
+  <link rel="stylesheet" href="../css/banner.css">
+  <link rel="stylesheet" href="../css/imagens.css">
+  <link rel="stylesheet" href="../css/responsivo.css">
+  <link rel="stylesheet" href="../css/carrosel.css">
+  <link rel="stylesheet" href="../css/footer.css">
+
+  <!-- NOVO CSS DO CATÁLOGO -->
+  <link rel="stylesheet" href="../css/catalogo.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR DO ARTESANATO -->
+  <header>
+    <nav class="navbar">
+      <a href="../Index.html" class="logo">
+        <img src="../img/Logo Kimba.png" alt="Logo" />
+      </a>
+
+      <div class="search-box">
+  <input id="barra-busca" type="text" placeholder="Pesquise uma categoria..." />
+  <button title="Pesquisar" class="search-btn">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+      <circle cx="11" cy="11" r="8"/>
+      <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+    </svg>
+  </button>
+</div>
+
+      <div class="nav-container">
+    <ul class="nav-links">
+        <li><a href="../Htmls/Sobre.html">Sobre Mim</a></li>
+        <li><a href="../Htmls/Catálogo.html">Catálogo</a></li>
+        <li><a href="../Htmls/Contatos.html">Contatos</a></li>
+    </ul>
+</div>
+    </nav>
+  </header>
+
+  <!-- CATEGORIAS COMO CARROSSEL → LOGO ABAIXO DO NAV -->
+<div class="categorias-carousel">
+<div class="carousel-wrapper">
+<span>Personagens</span>
+<span>Decoração</span>
+<span>Chaveiros</span>
+<span>Terapêutico Sensorial</span>
+<span>Suportes</span>
+<span>Outros</span>
+</div>
+</div>
+
+  <!-- AQUI VC COLOCA AS IMAGENS, NOMES E PREÇOS-->
+   <!-- NÃO ESQUECE DE COLOCAR NA PASTA IMAGENS SE NÃO, NÃO DÁ CERTO-->
+
+  <div class="container-geral">
+
+    <section class="conteudo">
+    <h1>Impressões 3D</h1>
+
+    <div class="catalogo-produtos">
+
+<div class="produto" data-cat="personagens" data-nome="Blaistose 20cm">
+    <a class="card" style="--img:url('../img/Pokemom.jpg')">
+        <img src="../img/Pokemom.jpg" alt="">
+    </a>
+    <h3 class="nome-produto">Blaistose 20cm</h3>
+    <p class="preco-produto">R$ 229,90</p>
+</div>
+
+<div class="produto" data-cat="suportes" data-nome="Porta trecho Headphone">
+    <a class="card" style="--img:url('../img/pac men.jpg')">
+        <img src="../img/pac men.jpg" alt="">
+    </a>
+    <h3 class="nome-produto">Porta trecho/Headphone</h3>
+    <p class="preco-produto">R$ 100,00</p>
+</div>
+
+<div class="produto" data-cat="suportes" data-nome="Suporte Controle Marshmello">
+    <a class="card" style="--img:url('../img/Marshmello.jpg')">
+        <img src="../img/Marshmello.jpg" alt="">
+    </a>
+    <h3 class="nome-produto">Suporte Controle</h3>
+    <p class="preco-produto">R$ 220,00</p>
+</div>
+
+<div class="produto" data-cat="personagens" data-nome="Efeite Fúria da Luz">
+    <a class="card" style="--img:url('../img/Furia da luz.jpg')">
+        <img src="../img/Furia da luz.jpg" alt="">
+    </a>
+    <h3 class="nome-produto">Efeite Fúria da Luz</h3>
+    <p class="preco-produto">R$ 25,00</p>
+</div>
+
+<div class="produto" data-cat="decoração" data-nome="Alfabeto Divertido Lore">
+    <a class="card" style="--img:url('../img/1.jpg')">
+        <img src="../img/1.jpg" alt="">
+    </a>
+    <h3 class="nome-produto">Alfabeto Divertido Lore</h3>
+    <p class="preco-produto">R$ 149,99</p>
+</div>
+
+<div class="produto" data-cat="terapêutico sensorial" data-nome="Terapêutico Sensorial 20cm">
+    <a class="card" style="--img:url('../img/6.jpg')">
+        <img src="../img/6.jpg" alt="">
+    </a>
+    <h3 class="nome-produto">Terapêutico Sensorial 20cm</h3>
+    <p class="preco-produto">R$ 50,00</p>
+</div>
+
+<div class="produto" data-cat="chaveiros" data-nome="Chaveiro Martelo Thor">
+    <a class="card" style="--img:url('../img/2.jpg')">
+        <img src="../img/2.jpg" alt="">
+    </a>
+    <h3 class="nome-produto">Chaveiro Martelo Thor</h3>
+    <p class="preco-produto">R$ 15,00</p>
+</div>
+
+<div class="produto" data-cat="decoração" data-nome="Vaso cor Sólida">
+    <a class="card" style="--img:url('../img/3.jpg')">
+        <img src="../img/3.jpg" alt="">
+    </a>
+    <h3 class="nome-produto">Vaso cor Sólida</h3>
+    <p class="preco-produto">R$ 44,90 unid</p>
+</div>
+
+<div class="produto" data-cat="personagens" data-nome="Enfeite 18cm">
+    <a class="card" style="--img:url('../img/4.jpg')">
+        <img src="../img/4.jpg" alt="">
+    </a>
+    <h3 class="nome-produto">Enfeite 18cm</h3>
+    <p class="preco-produto">R$ 34,90</p>
+</div>
+
+<div class="produto" data-cat="decoração" data-nome="Vaso Multicolorido">
+    <a class="card" style="--img:url('../img/5.jpg')">
+        <img src="../img/5.jpg" alt="">
+    </a>
+    <h3 class="nome-produto">Vaso Multicolorido</h3>
+    <p class="preco-produto">R$ 55,00</p>
+</div>
+
+<div class="produto" data-cat="terapêutico sensorial" data-nome="Raia Articulada">
+    <a class="card" style="--img:url('../img/7.jpg')">
+        <img src="../img/7.jpg" alt="">
+    </a>
+    <h3 class="nome-produto">Raia Articulada</h3>
+    <p class="preco-produto">R$ 55,00</p>
+</div>
+
+<div class="produto" data-cat="suportes" data-nome="Suporte Whisky">
+    <a class="card" style="--img:url('../img/8.jpg')">
+        <img src="../img/8.jpg" alt="">
+    </a>
+    <h3 class="nome-produto">Suporte Whisky</h3>
+    <p class="preco-produto">R$ 140,00</p>
+</div>
+
+<div class="produto" data-cat="suportes" data-nome="Suporte Controle Simples">
+    <a class="card" style="--img:url('../img/9.jpg')">
+        <img src="../img/9.jpg" alt="">
+    </a>
+    <h3 class="nome-produto">Suporte Controle</h3>
+    <p class="preco-produto">R$ 80,00</p>
+</div>
+
+<div class="produto" data-cat="chaveiros" data-nome="Chaveiro Personalizado">
+    <a class="card" style="--img:url('../img/10.jpg')">
+        <img src="../img/10.jpg" alt="">
+    </a>
+    <h3 class="nome-produto">Chaveiro Personalizado</h3>
+    <p class="preco-produto">Faça seu orçamento!</p>
+</div>
+
+<div class="produto" data-cat="chaveiros" data-nome="Chaveiro tipo 2">
+    <a class="card" style="--img:url('../img/11.jpg')">
+        <img src="../img/11.jpg" alt="">
+    </a>
+    <h3 class="nome-produto">Chaveiro tipo 2</h3>
+    <p class="preco-produto">R$ 10,00</p>
+</div>
+
+<div class="produto" data-cat="chaveiros" data-nome="Chaveiro tipo 1">
+    <a class="card" style="--img:url('../img/12.jpg')">
+        <img src="../img/12.jpg" alt="">
+    </a>
+    <h3 class="nome-produto">Chaveiro tipo 1</h3>
+    <p class="preco-produto">R$ 10,00</p>
+</div>
+
+<div class="produto" data-cat="chaveiros" data-nome="Chaveiro Polvinho">
+    <a class="card" style="--img:url('../img/13.jpg')">
+        <img src="../img/13.jpg" alt="">
+    </a>
+    <h3 class="nome-produto">Chaveiro Polvinho</h3>
+    <p class="preco-produto">R$ 12,00</p>
+</div>
+
+<div class="produto" data-cat="chaveiros" data-nome="Chapéu de Palha Luffy">
+    <a class="card" style="--img:url('../img/14.jpg')">
+        <img src="../img/14.jpg" alt="">
+    </a>
+    <h3 class="nome-produto">Chapéu de Palha Luffy</h3>
+    <p class="preco-produto">R$ 12,00</p>
+</div>
+
+<div class="produto" data-cat="chaveiros" data-nome="Darth Vader Chaveiro Miniatura">
+    <a class="card" style="--img:url('../img/15.jpg')">
+        <img src="../img/15.jpg" alt="">
+    </a>
+    <h3 class="nome-produto">Darth Vader Chaveiro e Miniatura</h3>
+    <p class="preco-produto">Preços na imagem!</p>
+</div>
+
+<div class="produto" data-cat="personagens" data-nome="Enfeite Banguela">
+    <a class="card" style="--img:url('../img/16.jpg')">
+        <img src="../img/16.jpg" alt="">
+    </a>
+    <h3 class="nome-produto">Enfeite Banguela</h3>
+    <p class="preco-produto">R$ 25,00</p>
+</div>
+
+<div class="produto" data-cat="decoração" data-nome="Vaso com Suculenta 1">
+    <a class="card" style="--img:url('../img/17.jpg')">
+        <img src="../img/17.jpg" alt="">
+    </a>
+    <h3 class="nome-produto">Vaso Com a Suculenta</h3>
+    <p class="preco-produto">R$ 50,00</p>
+</div>
+
+<div class="produto" data-cat="terapêutico sensorial" data-nome="Dragão Sensorial">
+    <a class="card" style="--img:url('../img/18.jpg')">
+        <img src="../img/18.jpg" alt="">
+    </a>
+    <h3 class="nome-produto">Dragão Sensorial</h3>
+    <p class="preco-produto">R$ 35,00</p>
+</div>
+
+<div class="produto" data-cat="decoração" data-nome="Vaso com suculenta 2">
+    <a class="card" style="--img:url('../img/19.jpg')">
+        <img src="../img/19.jpg" alt="">
+    </a>
+    <h3 class="nome-produto">Vaso com a suculenta 2</h3>
+    <p class="preco-produto">R$ 50,00</p>
+</div>
+
+<div class="produto" data-cat="decoração" data-nome="Porta Suculenta Gatinho">
+    <a class="card" style="--img:url('../img/20.jpg')">
+        <img src="../img/20.jpg" alt="">
+    </a>
+    <h3 class="nome-produto">Porta Suculenta Gatinho</h3>
+    <p class="preco-produto">R$ 50,00 com a suculenta</p>
+</div>
+
+<div class="produto" data-cat="decoração" data-nome="Porta treco">
+    <a class="card" style="--img:url('../img/21.jpg')">
+        <img src="../img/21.jpg" alt="">
+    </a>
+    <h3 class="nome-produto">Porta treco</h3>
+    <p class="preco-produto">R$ 60,00</p>
+</div>
+
+<div class="produto" data-cat="suportes" data-nome="Suporte bebida">
+    <a class="card" style="--img:url('../img/22.jpg')">
+        <img src="../img/22.jpg" alt="">
+    </a>
+    <h3 class="nome-produto">Suporte bebida</h3>
+    <p class="preco-produto">R$ 120,00</p>
+</div>
+
+<div class="produto" data-cat="suportes" data-nome="Porta Controle">
+    <a class="card" style="--img:url('../img/23.jpg')">
+        <img src="../img/23.jpg" alt="">
+    </a>
+    <h3 class="nome-produto">Porta Controle</h3>
+    <p class="preco-produto">R$ 70,00</p>
+</div>
+
+<div class="produto" data-cat="chaveiros" data-nome="Chaveiro Mario">
+    <a class="card" style="--img:url('../img/24.jpg')">
+        <img src="../img/24.jpg" alt="">
+    </a>
+    <h3 class="nome-produto">Chaveiro Mario</h3>
+    <p class="preco-produto">R$ 15,00</p>
+</div>
+
+<div class="produto" data-cat="decoração" data-nome="Vaso com a Suculenta 3">
+    <a class="card" style="--img:url('../img/25.jpg')">
+        <img src="../img/25.jpg" alt="">
+    </a>
+    <h3 class="nome-produto">Vaso com a Suclenta 3</h3>
+    <p class="preco-produto">R$ 50,00</p>
+</div>
+
+    <div class="produto" data-cat="chaveiros" data-nome="Chaveiro Hornet">
+    <a class="card" style="--img:url('../img/26.jpg')">
+        <img src="../img/26.jpg" alt="">
+    </a>
+    <h3 class="nome-produto">Chaveiro Hornet</h3>
+    <p class="preco-produto">R$ 14,99 a unidade</p>
+</div>
+
+<div class="produto" data-cat="chaveiros" data-nome="Chaveiro Pokébola">
+    <a class="card" style="--img:url('../img/27.jpg')">
+        <img src="../img/27.jpg" alt="">
+    </a>
+    <h3 class="nome-produto">Chaveiro Pokébola</h3>
+    <p class="preco-produto">R$ 14,99 a unidade</p>
+</div>
+
+<div class="produto" data-cat="suportes" data-nome="Porta Cápsulas">
+    <a class="card" style="--img:url('../img/28.jpg')">
+        <img src="../img/28.jpg" alt="">
+    </a>
+    <h3 class="nome-produto">Porta 24 capsu Nespressso</h3>
+    <p class="preco-produto">R$ 69,90</p>
+</div>
+
+<div class="produto" data-cat="decoração" data-nome="Tubarão">
+    <a class="card" style="--img:url('../img/29.jpg')">
+        <img src="../img/29.jpg" alt="">
+    </a>
+    <h3 class="nome-produto">Tubarão Articulado</h3>
+    <p class="preco-produto">R$ 44,90</p>
+</div>
+
+<div class="produto" data-cat="chaveiros" data-nome="Chaveiro Round 6">
+    <a class="card" style="--img:url('../img/30.jpg')">
+        <img src="../img/30.jpg" alt="">
+    </a>
+    <h3 class="nome-produto">Chaveiro Round 6</h3>
+    <p class="preco-produto">R$ 14,90 a unidade</p>
+</div>
+
+<div class="produto" data-cat="chaveiros" data-nome="Chaveiro The Knight">
+    <a class="card" style="--img:url('../img/31.jpg')">
+        <img src="../img/31.jpg" alt="">
+    </a>
+    <h3 class="nome-produto">Chaveiro The Knight</h3>
+    <p class="preco-produto">R$ 14,99 a unidade</p>
+</div>
+
+<div class="produto" data-cat="suportes" data-nome="Suporte Controle 2">
+    <a class="card" style="--img:url('../img/32.jpg')">
+        <img src="../img/32.jpg" alt="">
+    </a>
+    <h3 class="nome-produto">Suporte Controle 2</h3>
+    <p class="preco-produto">R$ 169,90</p>
+</div>
+
+<div class="produto" data-cat="decoração" data-nome="Porta Lápis">
+    <a class="card" style="--img:url('../img/33.jpg')">
+        <img src="../img/33.jpg" alt="">
+    </a>
+    <h3 class="nome-produto">Porta Lápis</h3>
+    <p class="preco-produto">R$ 29,90 a unidade</p>
+</div>
+
+<div class="produto" data-cat="outros" data-nome="Troféu Personalizado Criativo">
+    <a class="card" style="--img:url('../img/34.jpg')">
+        <img src="../img/34.jpg" alt="">
+    </a>
+    <h3 class="nome-produto">Troféu Personalizado Criativo</h3>
+    <p class="preco-produto">Faça o seu orçamento!</p>
+</div>
+
+<div class="produto" data-cat="personagens" data-nome="Trio Los Orcaleritos">
+    <a class="card" style="--img:url('../img/35.jpg')">
+        <img src="../img/35.jpg" alt="">
+    </a>
+    <h3 class="nome-produto">Trio Los Orcaleritos</h3>
+    <p class="preco-produto">R$ 34,90 Kit com 3 unid</p>
+</div>
+
+<div class="produto" data-cat="decoração" data-nome="Enfeite Boneco de Neve">
+    <a class="card" style="--img:url('../img/36.jpg')">
+        <img src="../img/36.jpg" alt="">
+    </a>
+    <h3 class="nome-produto">Enfeite Boneco de Neve</h3>
+    <p class="preco-produto">R$ 19,40 uma unidade</p>
+</div>
+
+<div class="produto" data-cat="outros" data-nome="Enfeite Canudo">
+    <a class="card" style="--img:url('../img/37.jpg')">
+        <img src="../img/37.jpg" alt="">
+    </a>
+    <h3 class="nome-produto">Enfeite Canudo</h3>
+    <p class="preco-produto">R$ 3,80 a unidade</p>
+</div>
+
+<div class="produto" data-cat="personagens" data-nome="Los Tralaleritos">
+    <a class="card" style="--img:url('../img/38.jpg')">
+        <img src="../img/38.jpg" alt="">
+    </a>
+    <h3 class="nome-produto">Los Tralaleritos</h3>
+    <p class="preco-produto">Preço na Imagem!</p>
+</div>
+
+<div class="produto" data-cat="personagens" data-nome="Las Tralaleritas">
+    <a class="card" style="--img:url('../img/39.jpg')">
+        <img src="../img/39.jpg" alt="">
+    </a>
+    <h3 class="nome-produto">Las Tralaleritas</h3>
+    <p class="preco-produto">R$ Preço na imagem!</p>
+</div>
+
+
+<div class="produto" data-cat="personagens" data-nome="Six Seven Brainrot">
+    <a class="card" style="--img:url('../img/40.jpg')">
+        <img src="../img/40.jpg" alt="">
+    </a>
+    <h3 class="nome-produto">Six Seven Brainrot</h3>
+    <p class="preco-produto">R$ 44,90</p>
+</div>
+
+<div class="produto" data-cat="chaveiros" data-nome="Six Seven Brainrot">
+    <a class="card" style="--img:url('../img/40.jpg')">
+        <img src="../img/41.jpg" alt="">
+    </a>
+    <h3 class="nome-produto">Chaveiro Demogorgon</h3>
+    <p class="preco-produto">R$ 19,90 a unidade</p>
+</div>
+
+<div class="produto" data-cat="personagens" data-nome="Six Seven Brainrot">
+    <a class="card" style="--img:url('../img/40.jpg')">
+        <img src="../img/42.jpg" alt="">
+    </a>
+    <h3 class="nome-produto">Chapeleiro Maluco Estilo Funko Pintado a Mão</h3>
+    <p class="preco-produto">R$ 149,90</p>
+</div>
+
+
+</div>
+</section>
+  </div>
+
+ <footer>
+  <div class="footer-container">
+    <div class="footer-logo">
+      <img src="../img/Logo Kimba.png" alt="Logo do site">
+      <p>Transformando criatividade em inovação 💡</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Explorar</h4>
+      <ul>
+        <li><a href="../Index.html">Início</a></li>
+        <li><a href="../Htmls/Catálogo.html">Catálogo</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-social">
+  <h4>Conecte-se</h4>
+  <div class="social-icons">
+    <a href="https://www.instagram.com/seu_perfil" target="_blank">
+      <img src="../img/instaa-removebg-preview.png" alt="Instagram" class="social-icon">
+    </a>
+    <a href="https://wa.me/5511943114274" target="_blank">
+      <img src="../img/zapp-removebg-preview.png" alt="WhatsApp" class="social-icon">
+    </a>
+  </div>
+</div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Kimba Print | Feito com criatvidade, impresso com tecnologia!</p>
+  </div>
+</footer>
+
+<script src="../js/pesquisa.js"></script>
+
+</body>
+</html>

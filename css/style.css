@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins' cursive;
+    margin: 20px;
+    background-color: #fff8dc;
+}
+
+.botao {
+    background-color: red;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.botao:hover {
+
+    background-color: #a65aa6;
+}
+
+
+header {
+  background: linear-gradient(to right, #6e256e ,#a65aa6, #4533b6, #070246);
+  box-shadow: 0 4px 8px rgba(253, 253, 253, 0.845);
+  display: flex;
+  justify-content: space-between; /* Distribui o espaço entre os itens */
+  align-items: center; /* Alinha os itens verticalmente */
+  padding: 10px; /* Espaçamento interno */
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo img {
+  height: 160px;
+  transition: transform 0.3s ease;
+  
+}
+
+.logo img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #c8f5c4;
+  text-shadow: 0 0 5px #fff;
+}
+
+.icons {
+  display: flex;
+  gap: 15px;
+  margin-left: 10px; /* Espaçamento entre logo e ícones */
+  height: 30px; /* Ajuste a altura dos ícones */
+  margin-left: 10px; /* Espaçamento entre ícones */
+}
+
+
+
+.icons a {
+  color: white;
+  font-size: 1.5rem;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.icons a:hover {
+  transform: scale(1.2);
+  color: #a65aa6;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+      display: flex;
+      justify-content: space-between; /* Alinha os itens com espaço entre eles */
+      align-items: center; /* Alinha os itens verticalmente ao centro */
+  }
+  
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .icons {
+    margin-top: 10px;
+    display: flex; /* Exibe os ícones em linha */
+    gap: 15px; /* Espaço entre os ícones */
+}
+  }
+
+
+.left-items {
+  display: flex; /* Alinha logo e ícones em linha */
+  align-items: center; /* Alinha os itens verticalmente */
+}

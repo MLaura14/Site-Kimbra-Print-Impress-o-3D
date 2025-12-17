@@ -1,0 +1,123 @@
+
+footer {
+  background: linear-gradient(to right, #126386, #2597c8, #e6af40, #c69534);
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  padding: 60px 20px 20px;
+  box-shadow: 0 -4px 8px rgba(253, 253, 253, 0.845);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1300px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.footer-logo {
+  flex: 1 1 250px;
+}
+
+.footer-logo img {
+  height: 110px;
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.footer-logo img:hover {
+  transform: scale(1.07) rotate(-1deg);
+  filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.6));
+}
+
+.footer-logo p {
+  margin-top: 12px;
+  color: #ddd;
+  font-size: 15px;
+}
+
+.footer-links h4,
+.footer-social h4 {
+  margin-bottom: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  color: #ddd;
+  font-size: 15px;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+  color: #fff;
+  text-shadow: 0 0 8px #fff;
+}
+
+.footer-social .social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-social .social-icons a {
+  color: #fff;
+  font-size: 22px;
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.footer-social .social-icons a:hover {
+  transform: scale(1.2);
+  text-shadow: 0 0 12px #fff;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 15px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-logo img {
+    height: 90px;
+  }
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease, filter 0.4s ease;
+  filter: drop-shadow(0 0 6px #126386);
+}
+
+.social-icon:hover {
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 12px #2597c8);
+}

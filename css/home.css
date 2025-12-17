@@ -1,0 +1,413 @@
+/* ======================= */
+/* Estilos gerais da Home  */
+/* ======================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+  background: linear-gradient(to bottom, #126386, #2597c8, #e6af40, #c69534);
+  font-family: 'Poppins' cursive;
+  font-weight: 200;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+nav.navbar {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+nav.navbar .logo img {
+  height: 100px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.15); /* leve transparência */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 30px;
+  backdrop-filter: blur(8px); /* efeito de vidro fosco */
+  overflow: hidden;
+  padding: 6px 10px;
+  max-width: 450px;
+  width: 100%;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.search-box:hover {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.search-box input {
+  flex-grow: 1;
+  border: none;
+  background: transparent;
+  color: #f0f0f0;
+  font-size: 15px;
+  padding: 10px 14px;
+  outline: none;
+}
+
+.search-box input::placeholder {
+  color: #d0d0d0; /* cinza claro e legível */
+  opacity: 1;
+}
+
+.search-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.search-btn svg {
+  width: 22px;
+  height: 22px;
+  stroke: #ffffff;
+}
+
+.search-btn:hover {
+  transform: scale(1.1);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #e3e3e3;
+  font-weight: bold;
+}
+
+.icons a {
+  font-size: 22px;
+  margin-left: 15px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* ===================== */
+/* Banner/Slider da Home */
+/* ===================== */
+.banner-container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 30px auto;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slide {
+  display: none;
+  width: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+  background-color: #e3e3e3;
+  user-select: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.nav-buttons {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  padding: 0 15px;
+  pointer-events: auto;
+  box-sizing: border-box;
+}
+
+.nav-buttons button {
+  background-color: rgba(0, 0, 0, 0.4);
+  border: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  transition: background 0.3s;
+  user-select: none;
+}
+
+.nav-buttons button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.dots {
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  user-select: none;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #333;
+}
+
+/* ===================== */
+/* Imagens interativas e ofertas */
+.imagem-interativa {
+  display: flex;
+  justify-content: center;
+  margin: 40px auto;
+  max-width: 1000px;
+  width: 90%;
+}
+
+.imagem-interativa img {
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, filter 0.4s ease;
+  width: 100%;
+  height: auto;
+  user-select: none;
+}
+
+.imagem-interativa img:hover {
+  transform: scale(1.08) rotate(-1.5deg);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+  filter: brightness(1.1);
+  animation: bounce 0.6s;
+}
+
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  30% { transform: translateY(-10px); }
+  60% { transform: translateY(5px); }
+  100% { transform: translateY(0); }
+}
+
+.imagem-clicavel {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+.imagem-clicavel img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.4s ease;
+  user-select: none;
+}
+
+.imagem-clicavel:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.imagem-clicavel:hover img {
+  transform: scale(1.1);
+}
+
+.oferta-efeito {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;
+  width: 80%;
+  max-width: 600px;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: brilho-pulso 4s infinite;
+  cursor: pointer;
+}
+
+.oferta-efeito img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.4s ease, filter 0.4s ease;
+  user-select: none;
+}
+
+.oferta-efeito:hover {
+  transform: scale(1.05) rotate(-1deg);
+  box-shadow: 0 0 35px rgba(255, 215, 0, 0.5), 0 0 60px rgba(255, 140, 0, 0.3);
+  animation: explosao 0.6s ease;
+}
+
+.oferta-efeito:hover img {
+  transform: scale(1.1);
+  filter: brightness(1.2) contrast(1.1);
+}
+
+@keyframes brilho-pulso {
+  0% { box-shadow: 0 0 10px rgba(255, 215, 0, 0.2); }
+  50% { box-shadow: 0 0 25px rgba(255, 215, 0, 0.4); }
+  100% { box-shadow: 0 0 10px rgba(255, 215, 0, 0.2); }
+}
+
+@keyframes explosao {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.15) rotate(1deg); }
+  100% { transform: scale(1.05) rotate(-1deg); }
+}
+
+body {
+    font-family: 'Poppins' cursive;
+    margin: 20px;
+    background-color: #fff8dc;
+}
+
+.botao {
+    background-color: red;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.botao:hover {
+
+    background-color: #a65aa6;
+}
+
+
+header {
+  background: linear-gradient(to right, #6e256e ,#a65aa6, #4533b6, #070246);
+  box-shadow: 0 4px 8px rgba(253, 253, 253, 0.845);
+  display: flex;
+  justify-content: space-between; /* Distribui o espaço entre os itens */
+  align-items: center; /* Alinha os itens verticalmente */
+  padding: 10px; /* Espaçamento interno */
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo img {
+  height: 100px;
+  transition: transform 0.3s ease;
+  
+}
+
+.logo img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #c8f5c4;
+  text-shadow: 0 0 5px #fff;
+}
+
+.icons {
+  display: flex;
+  gap: 15px;
+  margin-left: 10px; /* Espaçamento entre logo e ícones */
+  height: 30px; /* Ajuste a altura dos ícones */
+  margin-left: 10px; /* Espaçamento entre ícones */
+}
+
+
+
+.icons a {
+  color: white;
+  font-size: 1.5rem;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.icons a:hover {
+  transform: scale(1.2);
+  color: #a65aa6;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+      display: flex;
+      justify-content: space-between; /* Alinha os itens com espaço entre eles */
+      align-items: center; /* Alinha os itens verticalmente ao centro */
+  }
+  
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .icons {
+    margin-top: 10px;
+    display: flex; /* Exibe os ícones em linha */
+    gap: 15px; /* Espaço entre os ícones */
+}
+  }
+
+
+.left-items {
+  display: flex; /* Alinha logo e ícones em linha */
+  align-items: center; /* Alinha os itens verticalmente */
+}

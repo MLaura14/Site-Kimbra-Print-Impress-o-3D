@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+  background: linear-gradient(to bottom, #126386, #2597c8, #e6af40, #c69534);
+  font-family: 'Poppins', cursive;
+  font-weight: 200;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.botao {
+  background-color: red;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.botao:hover {
+  background-color: #126386;
+}

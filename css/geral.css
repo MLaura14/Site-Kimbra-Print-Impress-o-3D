@@ -1,0 +1,267 @@
+/* Geral */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap');
+
+body {
+  background: linear-gradient(to bottom, #6e256e, #070246);
+  font-family: 'Comfortaa', cursive;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+/* Navbar */
+nav.navbar {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+nav.navbar .logo img {
+  height: 100px;
+}
+
+/* Barra de busca */
+.search-area {
+  flex-grow: 1;
+  margin: 0 20px;
+}
+
+.search-area input.location,
+.search-box input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: calc(100% - 16px);
+  margin-bottom: 6px;
+  box-sizing: border-box;
+}
+
+.search-box {
+  display: flex;
+}
+
+.search-box input {
+  flex-grow: 1;
+}
+
+.search-box button {
+  background-color: #444;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Links da navbar */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Efeitos de hover e cor padrão */
+.nav-links li a {
+  color: #222;; /* cinza confortável */
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-links li a:hover {
+  color: #309623; /* verde */
+  transform: scale(1.05);
+}
+
+/* ===== Container Principal ===== */
+.container-geral {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+/* ===== Barra Lateral ===== */
+.barra-lateral {
+  width: 250px;
+  background-color: #fff;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.barra-lateral h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.barra-lateral input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: 'Comfortaa', cursive;
+}
+
+.barra-lateral ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.barra-lateral li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.barra-lateral li a {
+  text-decoration: none;
+  color: #222;
+  transition: color 0.3s;
+  font-family: 'Comfortaa', cursive;
+}
+
+.barra-lateral li a:hover {
+  color: #309623;
+}
+
+/* ===== Área de Conteúdo ===== */
+.indisponível {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #555;
+  font-size: 1.5rem;
+  font-family: 'Comfortaa', cursive;
+}
+
+.indisponível:hover {
+  color: #3ab435;
+  cursor: context-menu;
+}
+
+.icons a {
+  font-size: 22px;
+  margin-left: 15px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Barra lateral */
+.barra-lateral {
+  width: 250px;
+  background-color: #fff;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.barra-lateral h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.barra-lateral input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.barra-lateral ul {
+  list-style: none;
+  padding: 0;
+}
+
+.barra-lateral li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  color: #333;
+}
+
+.barra-lateral li a {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  color: #333;
+}
+
+.barra-lateral li a:hover {
+  color: #309623;
+}
+
+/* Conteúdo principal */
+.conteudo {
+  flex: 10;
+  padding: 30px;
+}
+
+/* Container geral */
+.container-geral {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+/* Catálogo de produtos */
+.catalogo-produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+  gap: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.catalogo-produtos img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.catalogo-produtos img:hover {
+  transform: scale(1.03);
+}
+
+/* Botões */
+.btn-voltar {
+  position: bottom;
+  background-color: #22bb1d;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border-color: #188a14;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.botoes {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  color: #333;
+}
+
+.botoes a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.botoes a:hover {
+  color: #309623;
+}
+

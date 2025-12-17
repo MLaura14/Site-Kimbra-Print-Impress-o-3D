@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* CONTAINER PRINCIPAL */
+.container-geral {
+  display: flex;
+  width: 100%;
+  margin-top: 0px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* SIDEBAR */
+.barra-lateral {
+  width: 250px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  height: fit-content;
+  position: sticky;
+  top: 150px;
+}
+
+.barra-lateral h3 {
+  margin-bottom: 15px;
+}
+
+.barra-lateral ul {
+  list-style: none;
+  padding: 0;
+}
+
+.barra-lateral li {
+  margin-bottom: 10px;
+}
+
+.barra-lateral a {
+  text-decoration: none;
+  color: #126386;
+  font-weight: 600;
+  transition: color .2s ease;
+}
+
+.barra-lateral a:hover {
+  color: #2597c8;
+}
+
+/* CONTEÚDO */
+.conteudo {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.conteudo h1 {
+  margin-bottom: 20px;
+  color: white;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+/* GRID DOS PRODUTOS */
+.catalogo-produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 25px;
+}
+
+.catalogo-produtos a {
+  display: block;
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform .2s ease, box-shadow .2s ease;
+  text-align: center;
+}
+
+.catalogo-produtos a:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+}
+
+.catalogo-produtos img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+}
+.categorias-carousel {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(6px);
+  padding: 20px 0;
+  margin-top: -21px; /* Distância logo após o nav fixo */
+  position: relative;
+  z-index: 10;
+  overflow-x: auto;
+  white-space: nowrap;
+  display: block;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.categorias-carousel::-webkit-scrollbar {
+  height: 6px;
+}
+
+.categorias-carousel::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.4);
+  border-radius: 20px;
+}
+
+.carousel-wrapper {
+  display: inline-flex;
+  gap: 35px;          /* aumenta o espaçamento entre as palavras */
+  padding: 0 20px;
+  justify-content: center; /* CENTRALIZA TUDO */
+  width: 100%;        /* força ocupar toda a largura */
+  box-sizing: border-box;
+}
+
+.carousel-wrapper span {
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  padding: 6px 14px;
+  border-radius: 20px;
+  transition: background .2s ease;
+}
+
+.carousel-wrapper span:hover {
+  background: rgba(255,255,255,0.15);
+}
+
+
+/* ============================
+   LAYOUT GERAL DO CATÁLOGO
+============================ */
+.container-geral {
+  display: flex;
+  width: 100%;
+  margin-top: 40px; /* antes era 120 — agora reduz pq o carrossel ocupa esse espaço */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* SIDEBAR */
+.barra-lateral {
+  width: 250px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  height: fit-content;
+  position: sticky;
+  top: 150px;
+}
+
+.barra-lateral h3 {
+  margin-bottom: 15px;
+}
+
+.barra-lateral ul {
+  list-style: none;
+  padding: 0;
+}
+
+.barra-lateral li {
+  margin-bottom: 10px;
+}
+
+.barra-lateral a {
+  text-decoration: none;
+  color: #126386;
+  font-weight: 600;
+  transition: color .2s ease;
+}
+
+.barra-lateral a:hover {
+  color: #2597c8;
+}
+
+/* CONTEÚDO */
+.conteudo {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.conteudo h1 {
+  margin-bottom: 20px;
+  color: white;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  text-align: center; /* CENTRALIZA O TÍTULO */
+}
+
+/* CARD COM O MESMO ESTILO DO CARROSSEL */
+
+/* CARD */
+.catalogo-produtos a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ffffff;
+  border-radius: 22px;
+  overflow: hidden;           /* ESSENCIAL para que a imagem interna arredonde */
+  
+  border: 3px solid #126386;
+  box-shadow: 0 0 15px #2597c8;
+  transition: .35s ease;
+  height: 250px;
+
+  /* Se a pessoa esquecer a var --img, não quebra */
+  --img: url('/img/default.jpg');
+}
+
+/* FUNDO BLUR */
+.catalogo-produtos a::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-image: var(--img);
+  background-size: cover;
+  background-position: center;
+
+  filter: blur(18px) brightness(0.9);
+  transform: scale(1.2);
+
+  z-index: 1;
+  border-radius: inherit;       /* Acompanha o arredondamento do card */
+}
+
+/* IMAGEM PRINCIPAL */
+.catalogo-produtos a img {
+  position: relative;
+  z-index: 2;
+
+  width: 85%;
+  height: 85%;
+  object-fit: contain;
+
+  border-radius: 20px;          /* ARREDONDA A IMAGEM */
+  background-clip: padding-box; /* EVITA VAZAMENTOS */
+}
+
+/* HOVER */
+.catalogo-produtos a:hover {
+  transform: translateY(-8px);
+  border-color: #c69534;
+  box-shadow: 0 0 25px #e6af40;
+}
+
+.catalogo-produtos a:hover img {
+  transform: scale(1.03);
+  transition: .35s ease;
+}
+
+/* TÍTULO ABAIXO DA IMG (SE USAR) */
+.catalogo-produtos a p,
+.catalogo-produtos a h3 {
+  margin-top: 10px;
+  font-weight: 600;
+  color: #ffffff;
+  font-family:'Poppins', cursive;
+}
+
+/* Corrige o bug do Pokémon ficar quadrado */
+.catalogo-produtos a {
+  overflow: hidden !important; /* garante o arredondamento */
+  border-radius: 22px !important;
+}
+
+/* Torna o fundo com blur sempre atrás */
+.catalogo-produtos a::before {
+  z-index: 0 !important;
+}
+
+/* Deixa a imagem sempre acima do blur */
+.catalogo-produtos a img {
+  z-index: 1 !important;
+  border-radius: 22px !important; /* força o arredondamento */
+  width: 90% !important;
+  height: 90% !important;
+  object-fit: cover !important; /* garante preenchimento */
+}
+
+/* Grid continua perfeito */
+.catalogo-produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+/* Bloco do produto */
+.produto {
+  text-align: center;
+}
+
+
+/* HOVER */
+.card:hover {
+  transform: translateY(-7px);
+  transition: 0.35s;
+  border-color: #c69534;
+  box-shadow: 0 0 25px #e6af40;
+}
+
+/* Nome */
+.nome-produto {
+  margin-top: 12px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.4);
+  font-family: 'Poppins';
+}
+
+/* Preço piscando */
+.preco-produto {
+  margin-top: 5px;
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #ffffff;
+  animation: piscar 1.2s infinite alternate;
+  text-shadow: 0 0 10px rgba(0,0,0,0.7);
+}
+
+/* Animação */
+@keyframes piscar {
+  0% { opacity: 1; transform: scale(1); }
+  100% { opacity: .4; transform: scale(1.06); }
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .card {
+    height: 200px;
+  }
+  .card img {
+    width: 80%;
+  }
+}

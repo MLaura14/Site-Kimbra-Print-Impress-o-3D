@@ -1,0 +1,198 @@
+/* HEADER e NAV ocupando toda a largura e fixados no topo */
+header {
+  width: 100vw;
+  background: linear-gradient(to right, #126386, #2597c8, #e6af40, #c69534);
+  box-shadow: 0 4px 8px rgba(253, 253, 253, 0.845);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  margin: 0;
+  position: fixed; /* fixa no topo da tela */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Garante que o conteúdo da página comece abaixo do header */
+body {
+  margin: 0;
+  padding-top: 160px; /* espaço para o header fixo */
+  background-color: #f9f9f9;
+}
+
+/* NAVBAR ocupando toda a largura interna */
+.navbar {
+  width: 100%;
+  max-width: 1300px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* muda o alinhamento geral pra começar da esquerda */
+  padding: 0 40px;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+  gap: 40px; /* controla a distância entre os blocos principais */
+  white-space: nowrap;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* empurra o grupo (links + favoritos) pro canto direito */
+  gap: 15px; /* controla a distância entre os nav-links e o favoritos */
+}
+
+.logo img {
+  height: 110px;
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.07) rotate(-1deg);
+  filter: drop-shadow(0 0 12px rgb(255, 255, 255));
+  cursor: pointer;
+}
+
+/* Barra de pesquisa */
+.search-box {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.301);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 30px;
+  backdrop-filter: blur(8px);
+  overflow: hidden;
+  padding: 6px 10px;
+  width: 100%;
+  max-width: 400px;
+  margin-left: 10px; /* aproxima da logo */
+  animation: pulseGlow 2.5s infinite;
+  transition: transform 0.3s ease;
+}
+
+.search-box:hover {
+  transform: scale(1.03);
+}
+
+@keyframes pulseGlow {
+  0% { box-shadow: 0 0 5px rgb(197, 153, 58); }
+  50% { box-shadow: 0 0 15px rgba(255, 230, 1, 0.8); }
+  100% { box-shadow: 0 0 5px rgb(245, 237, 134); }
+}
+
+.search-box input {
+  flex-grow: 1;
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-size: 15px;
+  padding: 10px 14px;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.search-box input::placeholder {
+  color: #ddd;
+  opacity: 1;
+}
+
+.search-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-btn svg {
+  width: 22px;
+  height: 22px;
+  stroke: #fff;
+  transition: transform 0.3s ease;
+}
+
+.search-btn:hover svg {
+  transform: scale(1.1);
+}
+
+/* Links de navegação */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin-left: auto; /* empurra os links e os Favoritos pro canto direito */
+  margin-right: 10px; /* aproxima dos Favoritos */
+  padding: 0;
+  white-space: nowrap;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #f0f0f0;
+  font-weight: 400; /* sem negrito */
+  font-size: 16px;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+}
+
+.nav-links li a:hover {
+  color: #fff;
+  text-shadow: 0 0 8px #fff;
+}
+
+/* icone */
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: 8px;
+}
+
+.favoritos-texto {
+  color: #f0f0f0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.icons:hover .favoritos-texto {
+  color: #fff;
+  text-shadow: 0 0 10px #fff;
+}
+
+.icons a {
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.icons a:hover {
+  transform: scale(1.1);
+  color: #fff;
+  text-shadow: 0 0 10px #fff;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .search-box {
+    margin-left: 0;
+    max-width: 90%;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Divulgação Artesanato</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css/banner.css">
+  <link rel="stylesheet" href="./css/imagens.css">
+  <link rel="stylesheet" href="./css/responsivo.css">
+  <link rel="stylesheet" href="./css/carrosel.css">
+  <link rel="stylesheet" href="./css/footer.css">
+</head>
+<body>
+  <header>
+  <nav class="navbar">
+
+    <!-- LOGO -->
+    <a href="./Index.html" class="logo">
+      <img src="./img/Logo Kimba.png" alt="Logo" />
+    </a>
+
+    <!-- BARRA DE PESQUISA -->
+    <div class="search-box">
+      <input type="text" placeholder="Pesquise uma categoria..." />
+      <button title="Pesquisar" class="search-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+          <circle cx="11" cy="11" r="8"/>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- LINKS -->
+    <div class="nav-container">
+      <ul class="nav-links">
+          <li><a href="./Htmls/Sobre.html">Sobre Mim</a></li>
+          <li><a href="./Htmls/Catálogo.html">Catálogo</a></li>
+          <li><a href="./Htmls/Contatos.html">Contatos</a></li>
+      </ul>
+    </div>
+
+  </nav>
+</header>
+
+  <div class="banner-container">
+    <div class="slide active">
+      <img src="./img/Banner Kimbra.png" alt="Banner 1" />
+    </div>
+
+    <div class="nav-buttons">
+      <button onclick="prevSlide()">&#10094;</button>
+      <button onclick="nextSlide()">&#10095;</button>
+    </div>
+
+    <div class="dots">
+      <span class="dot active" onclick="goToSlide(0)"></span>
+      <span class="dot" onclick="goToSlide(1)"></span>
+      <span class="dot" onclick="goToSlide(2)"></span>
+      <span class="dot" onclick="goToSlide(3)"></span>
+      <span class="dot" onclick="goToSlide(4)"></span>
+    </div>
+  </div>
+
+  <!-- SEÇÃO DE ARTESANATO EM DESTAQUE -->
+   <!--Coloque as fotos que apareceram na página inicial aqui-->
+<section class="craft-showcase">
+  <h2>Meus Trabalhos</h2>
+
+  <div class="craft-carousel">
+    <div class="craft-track">
+      <div class="craft-card">
+        <img src="img/Marshmello.jpg" alt="Miranha">
+        <h3>Suporte Controle</h3>
+      </div>
+      <div class="craft-card">
+        <img src="img/Pokemom.jpg" alt="Mario">
+        <h3>Blastoise</h3>
+      </div>
+      <div class="craft-card">
+        <img src="img/pac men.jpg" alt="Goku">
+        <h3>Porta Headphone</h3>
+      </div>
+      <div class="craft-card">
+        <img src="img/33.jpg" alt="Goku">
+        <h3>Porta Lápis</h3>
+      </div>
+      <div class="craft-card">
+        <img src="img/27.jpg" alt="Goku">
+        <h3>Chaveiro Pokébola</h3>
+      </div>
+      <div class="craft-card">
+        <img src="img/29.jpg" alt="Goku">
+        <h3>Tubarão Articulado</h3>
+      </div>
+      <div class="craft-card">
+        <img src="img/7.jpg" alt="Goku">
+        <h3>Raia Articulada</h3>
+      </div>
+      <div class="craft-card">
+        <img src="img/Furia da luz.jpg" alt="Banguela">
+        <h3>Fúria Da luz</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-logo">
+      <img src="img/Logo Kimba.png" alt="Logo do site">
+      <p>Transformando criatividade em inovação 💡</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Explorar</h4>
+      <ul>
+        <li><a href="Index.html">Início</a></li>
+        <li><a href="./Htmls/Catálogo.html">Catálogo</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-social">
+  <h4>Conecte-se</h4>
+  <div class="social-icons">
+    <a href="https://www.instagram.com/seu_perfil" target="_blank">
+      <img src="img/instaa-removebg-preview.png" alt="Instagram" class="social-icon">
+    </a>
+    <a href="https://wa.me/5511943114274" target="_blank">
+      <img src="img/zapp-removebg-preview.png" alt="WhatsApp" class="social-icon">
+    </a>
+  </div>
+</div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Kimba Print | Feito com criatividade, impresso com tecnologia!</p>
+  </div>
+</footer>
+
+
+ <script src="./js/carrossel.js"></script>
+  <script src="./js/home.js"></script>
+
+</body>
+</html>
